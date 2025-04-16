@@ -1,0 +1,200 @@
+/* === Общие стили === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #0056a6;
+}
+
+a {
+  color: #0056a6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Стили хедера === */
+.header {
+  background: #f1f1f1;
+  padding: 10px 0;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Позволяем перенос текста при недостатке ширины */
+  gap: 10px; /* Отступы между элементами на маленьких экранах */
+}
+
+.header .company-name {
+  font-size: 1.8em;
+  margin: 0;
+  text-align: center;
+}
+
+.emergency-phone {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center; /* Центрируем текст на узких экранах */
+}
+
+.emergency-number {
+  color: #d9534f;
+}
+
+/* === Главный контент === */
+.main-grid {
+  display: grid;
+  grid-template-columns: minmax(250px, auto) 1fr; /* Левая колонка 250px, правая занимают всё доступное пространство */
+  gap: 20px;
+}
+
+.main-content {
+  padding: 0;
+}
+
+.info, .schedule, .contacts {
+  margin-bottom: 20px; /* Отступ между секциями */
+}
+
+.info h2, .schedule h2, .contacts h2 {
+  margin-bottom: 10px;
+}
+
+/* Правая колонка (карта) */
+.map-section {
+  padding: 0;
+}
+
+.map-section #map {
+  width: 100%;
+  height: 400px;
+  min-height: 300px; /* Подстраиваемся под меньшие экраны */
+}
+
+/* Ссылки в содержании */
+.contacts-column p {
+  margin: 10px 0;
+}
+
+/* === Стили для футера === */
+.footer {
+  background: #0056a6;
+  color: white;
+  padding: 20px 15px; /* Уменьшенные отступы для мобильных */
+}
+
+.footer-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1 1 30%; /* Колонки занимают 30% ширины */
+  min-width: 200px;
+  margin-bottom: 20px; /* Добавляем отступы между колонками на узких устройствах */
+}
+
+.footer-column h3,
+.footer-column p,
+.footer-column a {
+  text-align: left;
+  color: white;
+  margin: 10px 0;
+}
+
+.footer-column a {
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+/* Копирайт внизу */
+footer p {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+/* === Адаптивность === */
+
+/* Планшеты (максимальная ширина 768px) */
+@media (max-width: 768px) {
+  .main-grid {
+    grid-template-columns: 1fr; /* Контент и карта в одну колонку */
+  }
+
+  .map-section #map {
+    height: 300px; /* Снижаем высоту карты */
+  }
+
+  .header-flex {
+    flex-direction: column; /* Делаем элементы хедера вертикальными */
+    text-align: center;
+  }
+
+  .footer-grid {
+    flex-direction: column; /* Все элементы футера переходят в вертикальный формат */
+    gap: 15px;
+  }
+
+  .footer-column {
+    flex: 1 1 100%; /* Колонка занимает всю ширину */
+    min-width: 100%;
+  }
+}
+
+/* Смартфоны (максимальная ширина 480px) */
+@media (max-width: 480px) {
+  .header-flex {
+    gap: 5px; /* Уменьшим расстояния на самых узких экранах */
+  }
+
+  .header .company-name {
+    font-size: 1.4em; /* Уменьшаем заголовок */
+  }
+
+  .emergency-phone {
+    font-size: 1.2em; /* Уменьшаем шрифт для аварийного номера */
+  }
+
+  .main-content, .map-section {
+    padding: 0; /* Убираем лишние отступы */
+  }
+
+  .map-section #map {
+    height: 250px; /* Уменьшаем минимальную высоту карты */
+  }
+
+  .footer {
+    padding: 15px 10px; /* Уменьшаем отступы для футера */
+  }
+
+  .footer-column {
+    margin-bottom: 10px;
+  }
+
+  footer p {
+    font-size: 0.8em; /* Уменьшаем текст копирайта */
+  }
+}
