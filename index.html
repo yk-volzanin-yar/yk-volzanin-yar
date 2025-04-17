@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Управляющая компания Волжанин">
-    <title>Управляющая компания Волжанин</title>
+    <meta name="description" content="Управляющая компания Волжанин предоставляет качественные услуги по управлению многоквартирными домами в Ярославле. Аварийная служба, лицензия №76ЛИЦ25/0009.">
+    <meta name="keywords" content="Управляющая компания, УК Волжанин, услуги ЖКХ, Ярославль, аварийный номер, многоквартирные дома">
+    <meta name="author" content="Управляющая компания Волжанин">
+    <title>Управляющая компания Волжанин | УК Волжанин в Ярославле</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Управляющая компания Волжанин",
+            "description": "Управление многоквартирными домами в Ярославле. Лицензия №76ЛИЦ25/0009.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "пр-кт Машиностроителей, д. 7",
+                "addressLocality": "Ярославль",
+                "postalCode": "150000",
+                "addressCountry": "RU"
+            },
+            "telephone": "+7-920-126-0144",
+            "openingHours": "Mo-Th 08:30-17:00, Fr 08:30-16:00",
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 57.6261,
+                "longitude": 39.8845
+            },
+            "url": "https://ук-волжанин-яр.рф/"
+        }
+    </script>
 </head>
 <body>
 <header class="header">
@@ -26,7 +51,7 @@
         <!-- Левая часть: Информация, график работы, контакты -->
         <div class="main-content">
             <section class="info">
-                <h2>Информация</h2>
+                <h2>О нас:</h2>
                 <p>Управляющая компания <strong>УК "Волжанин"</strong> находится по адресу:</p>
                 <address>
                     г. Ярославль, пр-кт Машиностроителей, д. 7
@@ -34,7 +59,7 @@
             </section>
 
             <section class="schedule">
-                <h2>График работы</h2>
+                <h2>График работы:</h2>
                 <ul class="schedule-list">
                     <li>Пн - Чт: с 08:30 до 17:00</li>
                     <li>Пт: с 08:30 до 16:00</li>
@@ -43,7 +68,7 @@
             </section>
 
             <section class="contacts">
-                <h2>Контакты</h2>
+                <h2>Контакты для связи</h2>
                 <div class="contacts-column">
                     <p>Телефон: <a href="tel:+79201260144" class="phone">+7 920 126 0144</a></p>
                     <p>Городской номер: <a href="tel:203045" class="phone">20-30-45</a></p>
@@ -84,7 +109,7 @@
             <p>г. Ярославль, пр-кт Машиностроителей, д. 7</p>
             <!-- Текст лицензии стал ссылкой -->
             <p class="footer-license">
-                <a href="licens.jpg" target="_blank" class="license-text">
+                <a href="licens.jpg" target="_blank" class="license-text" rel="noopener noreferrer">
                     Лицензия № 76ЛИЦ25/0009 действительна до 02.04.2030
                 </a>
             </p>
@@ -95,7 +120,10 @@
     </p>
 </footer>
 
-
+<script>
+    // Для динамической установки текущего года
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </body>
 </html>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
