@@ -27,7 +27,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* === Стили хедера === */
+/* === Стили хедера с подложкой только под текстом === */
 .header {
   background-image: url('zavolga.jpg'); /* Указываем путь к изображению */
   background-size: cover; /* Изображение покрывает весь блок */
@@ -74,7 +74,15 @@ a:hover {
   color: #333; /* Темный текст */
 }
 
+/* Стиль номера аварийного телефона */
+.emergency-number {
+  color: #e74c3c; /* Темно-красный цвет для текста номера телефона */
+  font-weight: bold; /* Жирный текст для выделения */
+}
 
+.emergency-number:hover {
+  text-decoration: underline; /* Добавляем подчеркивание при наведении */
+}
 
 
 /* === Главный контент === */
