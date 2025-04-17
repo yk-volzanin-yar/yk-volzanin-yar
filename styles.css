@@ -27,41 +27,61 @@ a:hover {
   text-decoration: underline;
 }
 
-/* === Стили хедера === */
+/* === Стили хедера с подложкой только под текстом === */
 .header {
-  background: #f1f1f1;
-  padding: 10px 0;
-  border-bottom: 2px solid #e5e5e5;
+  background-image: url('zavolga.jpg'); /* Указываем путь к изображению */
+  background-size: cover; /* Изображение покрывает весь блок */
+  background-position: center -150px; /* Центрируем изображение и смещаем вверх на 50 пикселей */
+  background-repeat: no-repeat; /* Избегаем повторения фона */
+  height: 200px; /* Высота хедера */
+  display: flex; /* Флекс-контейнер для выравнивания */
+  align-items: center; /* Центрируем содержимое по вертикали */
+  text-align: left; /* Выравнивание текста по левому краю */
+  padding: 0 20px; /* Отступы для текста */
+  position: relative; /* Для корректного позиционирования слоев */
+  color: white; /* Цвет текста */
+  border-bottom: 2px solid #e5e5e5; /* Нижняя граница */
 }
 
-.header-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; /* Позволяем перенос текста при недостатке ширины */
-  gap: 10px; /* Отступы между элементами на маленьких экранах */
+
+/* Прямоугольная подложка непосредственно под текстом */
+.header .text-background {
+  background: rgba(255, 255, 255, 0.25); /* Полупрозрачный белый фон (25%) */
+  backdrop-filter: blur(8px); /* Размытие подложки */
+  border-radius: 8px; /* Скругленные края подложки */
+  padding: 10px 20px; /* Внутренние отступы для воздуха */
+  display: inline-block; /* Размер подложки зависит от текста внутри */
+  position: relative; /* Равное позиционирование с текстом */
+  z-index: 1; /* Чтобы выводиться над фоном */
 }
 
+/* Стиль заголовка */
 .header .company-name {
-  font-size: 1.8em;
-  margin: 0;
-  text-align: center;
+  font-size: 2em; /* Размер текста */
+  margin: 0; /* Убираем внешние отступы */
+  text-shadow: none; /* Убираем тень текста, не нужна под подложкой */
 }
 
-.emergency-phone {
-  font-size: 1.4em;
-  font-weight: bold;
-  text-align: center; /* Центрируем текст на узких экранах */
+/* Стиль аварийного телефона */
+.header .emergency-phone {
+  margin-top: 10px; /* Отступ сверху */
+  font-size: 1.3em; /* Размер текста */
+  font-weight: bold; /* Жирный шрифт */
+  text-shadow: none; /* Убираем тень текста */
 }
 
+/* Стиль номера телефона */
 .emergency-number {
-  color: #d9534f;
+  color: #d9534f; /* Красноватый цвет номера */
 }
+
+
+
 
 /* === Главный контент === */
 .main-grid {
   display: grid;
-  grid-template-columns: minmax(250px, auto) 1fr; /* Левая колонка 250px, правая занимают всё доступное пространство */
+  grid-template-columns: minmax(250px, auto) 1fr; /* Левая колонка 250px, правая занимает всё доступное пространство */
   gap: 20px;
 }
 
@@ -139,7 +159,6 @@ a:hover {
   text-decoration: underline; /* Добавляем подчеркивание при наведении */
 }
 
-
 /* Копирайт внизу */
 footer p {
   text-align: center;
@@ -159,9 +178,16 @@ footer p {
     height: 300px; /* Снижаем высоту карты */
   }
 
-  .header-flex {
-    flex-direction: column; /* Делаем элементы хедера вертикальными */
-    text-align: center;
+  .header {
+    height: 150px; /* Высота остается 150px */
+  }
+
+  .header .company-name {
+    font-size: 1.6em; /* Уменьшаем заголовок */
+  }
+
+  .header .emergency-phone {
+    font-size: 1.1em; /* Уменьшаем шрифт для телефона */
   }
 
   .footer-grid {
@@ -177,16 +203,16 @@ footer p {
 
 /* Смартфоны (максимальная ширина 480px) */
 @media (max-width: 480px) {
-  .header-flex {
-    gap: 5px; /* Уменьшим расстояния на самых узких экранах */
+  .header {
+    height: 150px; /* Высота остается 150px */
   }
 
   .header .company-name {
-    font-size: 1.4em; /* Уменьшаем заголовок */
+    font-size: 1.4em; /* Дополнительно уменьшаем текст */
   }
 
-  .emergency-phone {
-    font-size: 1.2em; /* Уменьшаем шрифт для аварийного номера */
+  .header .emergency-phone {
+    font-size: 1em; /* Уменьшаем шрифт телефона */
   }
 
   .main-content, .map-section {
