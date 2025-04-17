@@ -51,7 +51,7 @@ a:hover {
   padding: 20px 50px; /* Отступы: 50px во все стороны (ширина текста + 50px) */
   display: inline-block; /* Размер подложки зависит от текста */
   position: absolute; /* Позиционируем относительно родительского блока */
-  left: 15px; /* Максимально смещение влево */
+  left: 15px; /* Максимальное смещение влево */
   top: 50%; /* Центрирование по вертикали */
   transform: translateY(-50%); /* Для точного центрирования по вертикали */
   z-index: 10; /* Поднимем над остальными элементами */
@@ -83,7 +83,6 @@ a:hover {
 .emergency-number:hover {
   text-decoration: underline; /* Добавляем подчеркивание при наведении */
 }
-
 
 /* === Главный контент === */
 .main-grid {
@@ -175,73 +174,62 @@ footer p {
   margin: 20px 0;
 }
 
-
 /* === Адаптивность === */
 
-/* Планшеты (максимальная ширина 768px) */
+/* Планшеты и мобильные устройства (максимальная ширина 768px) */
 @media (max-width: 768px) {
-  .main-grid {
-    grid-template-columns: 1fr; /* Контент и карта в одну колонку */
-  }
-
-  .map-section #map {
-    height: 300px; /* Снижаем высоту карты */
-  }
-
   .header {
-    height: 150px; /* Высота остается 150px */
+    background-color: #d3d3d3; /* Заменяем изображение на серый фон */
+    background-image: none; /* Убираем изображение */
+    height: 150px; /* Меньшая высота хедера */
+  }
+
+  .header .text-background {
+    background: none; /* Убираем подложку */
+    backdrop-filter: none; /* Убираем размытие */
+    margin: 0 15px; /* Убираем лишние отступы */
+    padding: 0;
+    position: static; /* Снимаем абсолютное позиционирование */
   }
 
   .header .company-name {
-    font-size: 1.6em; /* Уменьшаем заголовок */
+    font-size: 1.6em; /* Уменьшаем размер заголовка */
+    color: #333; /* Серый цвет текста */
   }
 
-  .header .emergency-phone {
-    font-size: 1.1em; /* Уменьшаем шрифт для телефона */
+  .map-section #map {
+    height: 300px; /* Уменьшенный размер карты */
   }
 
   .footer-grid {
-    flex-direction: column; /* Все элементы футера переходят в вертикальный формат */
-    gap: 15px;
+    flex-direction: column; /* Элементы футера в столбик */
   }
 
   .footer-column {
-    flex: 1 1 100%; /* Колонка занимает всю ширину */
-    min-width: 100%;
+    flex: 1 1 100%;
+    margin-bottom: 20px;
   }
 }
 
 /* Смартфоны (максимальная ширина 480px) */
 @media (max-width: 480px) {
   .header {
-    height: 150px; /* Высота остается 150px */
+    height: 130px; /* Ещё меньшая высота */
   }
 
   .header .company-name {
-    font-size: 1.4em; /* Дополнительно уменьшаем текст */
-  }
-
-  .header .emergency-phone {
-    font-size: 1em; /* Уменьшаем шрифт телефона */
-  }
-
-  .main-content, .map-section {
-    padding: 0; /* Убираем лишние отступы */
+    font-size: 1.4em; /* Ещё меньший размер заголовка */
   }
 
   .map-section #map {
-    height: 250px; /* Уменьшаем минимальную высоту карты */
+    height: 250px; /* Уменьшенная карта */
   }
 
   .footer {
-    padding: 15px 10px; /* Уменьшаем отступы для футера */
-  }
-
-  .footer-column {
-    margin-bottom: 10px;
+    padding: 15px 10px; /* Уменьшенные отступы для футера */
   }
 
   footer p {
-    font-size: 0.8em; /* Уменьшаем текст копирайта */
+    font-size: 0.8em; /* Более мелкий текст в футере */
   }
 }
