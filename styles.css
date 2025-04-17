@@ -129,6 +129,17 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Цвет текста для строки с лицензией (ссылки) */
+.footer-license .license-text {
+  color: #32cd32; /* Светло-зеленый цвет */
+  text-decoration: none; /* Убираем стандартное подчеркивание у ссылки */
+}
+
+.footer-license .license-text:hover {
+  text-decoration: underline; /* Добавляем подчеркивание при наведении */
+}
+
+
 /* Копирайт внизу */
 footer p {
   text-align: center;
