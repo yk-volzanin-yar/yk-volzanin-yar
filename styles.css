@@ -29,65 +29,61 @@ a:hover {
 
 /* === Стили хедера с подложкой только под текстом === */
 .header {
-  background-image: url('zavolga.jpg'); /* Указываем путь к изображению */
-  background-size: cover; /* Изображение покрывает весь блок */
-  background-position: center -150px; /* Центрируем изображение и смещаем вверх */
-  background-repeat: no-repeat; /* Избегаем повторения фона */
-  height: 200px; /* Высота хедера */
-  display: flex; /* Флекс-контейнер для выравнивания */
-  align-items: center; /* Центрируем содержимое по вертикали */
-  text-align: left; /* Выравнивание текста по левому краю */
-  padding: 0; /* Убираем стандартные отступы */
-  position: relative; /* Для корректного позиционирования подложки */
-  color: white; /* Цвет текста */
-  border-bottom: 2px solid #e5e5e5; /* Нижняя граница */
+  background-image: url('zavolga.jpg');
+  background-size: cover;
+  background-position: center -150px;
+  background-repeat: no-repeat;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 0;
+  position: relative;
+  color: white;
+  border-bottom: 2px solid #e5e5e5;
 }
 
-/* Прямоугольная подложка с текстом */
 .header .text-background {
-  background: rgba(255, 255, 255, 0.25); /* Полупрозрачный белый фон (25%) */
-  backdrop-filter: blur(8px); /* Размытие подложки */
-  border-radius: 5px; /* Легкое скругление краев */
-  padding: 20px 50px; /* Отступы: 50px во все стороны (ширина текста + 50px) */
-  display: inline-block; /* Размер подложки зависит от текста */
-  position: absolute; /* Позиционируем относительно родительского блока */
-  left: 15px; /* Максимальное смещение влево */
-  top: 50%; /* Центрирование по вертикали */
-  transform: translateY(-50%); /* Для точного центрирования по вертикали */
-  z-index: 10; /* Поднимем над остальными элементами */
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  border-radius: 5px;
+  padding: 20px 50px;
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
-/* Стиль текста в заголовке */
 .header .company-name {
-  font-size: 2em; /* Размер текста */
-  margin: 0; /* Убираем внешние отступы */
-  text-shadow: none; /* Убираем текстовую тень */
-  color: #333; /* Темный цвет для контраста с белой подложкой */
+  font-size: 2em;
+  margin: 0;
+  text-shadow: none;
+  color: #333;
 }
 
-/* Стиль аварийного телефона */
 .header .emergency-phone {
-  margin-top: 10px; /* Отступ сверху */
-  font-size: 1.3em; /* Размер текста */
-  font-weight: bold; /* Жирный шрифт для акцента */
-  text-shadow: none; /* Убираем текстовую тень */
-  color: #333; /* Темный текст */
+  margin-top: 10px;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-shadow: none;
+  color: #333;
 }
 
-/* Стиль номера аварийного телефона */
 .emergency-number {
-  color: #e74c3c; /* Темно-красный цвет для текста номера телефона */
-  font-weight: bold; /* Жирный текст для выделения */
+  color: #e74c3c;
+  font-weight: bold;
 }
 
 .emergency-number:hover {
-  text-decoration: underline; /* Добавляем подчеркивание при наведении */
+  text-decoration: underline;
 }
 
 /* === Главный контент === */
 .main-grid {
   display: grid;
-  grid-template-columns: minmax(250px, auto) 1fr; /* Левая колонка 250px, правая занимает всё доступное пространство */
+  grid-template-columns: minmax(250px, auto) 1fr;
   gap: 20px;
 }
 
@@ -96,22 +92,22 @@ a:hover {
 }
 
 .info, .schedule, .contacts {
-  margin-bottom: 20px; /* Отступ между секциями */
+  margin-bottom: 20px;
 }
 
 .info h2, .schedule h2, .contacts h2 {
   margin-bottom: 10px;
 }
 
-/* Правая колонка (карта) */
 .map-section {
   padding: 0;
+  display: block;
 }
 
 .map-section #map {
   width: 100%;
   height: 400px;
-  min-height: 300px; /* Подстраиваемся под меньшие экраны */
+  min-height: 300px;
 }
 
 /* Ссылки в содержании */
@@ -123,7 +119,7 @@ a:hover {
 .footer {
   background: #0056a6;
   color: white;
-  padding: 20px 15px; /* Уменьшенные отступы для мобильных */
+  padding: 20px 15px;
 }
 
 .footer-grid {
@@ -131,20 +127,20 @@ a:hover {
   gap: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
-  text-align: left; /* Выравнивание текста внутри колонок футера по левому краю */
+  text-align: left;
 }
 
 .footer-column {
-  flex: 1 1 30%; /* Колонки занимают 30% ширины */
+  flex: 1 1 30%;
   min-width: 200px;
   margin-bottom: 20px;
-  text-align: left; /* Выравнивание текста в каждой колонке по левому краю */
+  text-align: left;
 }
 
 .footer-column h3,
 .footer-column p,
 .footer-column a {
-  text-align: left; /* Текст в колонках футера выравнивается по левому краю */
+  text-align: left;
   color: white;
   margin: 10px 0;
 }
@@ -157,9 +153,8 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Цвет текста для строки с лицензией (ссылки) */
 .footer-license .license-text {
-  color: #32cd32; /* Светло-зеленый цвет */
+  color: #32cd32;
   text-decoration: none;
 }
 
@@ -167,9 +162,8 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Копирайт внизу */
 footer p {
-  text-align: center; /* Центровка текста копирайта */
+  text-align: center;
   font-size: 0.9em;
   margin: 20px 0;
 }
@@ -179,30 +173,38 @@ footer p {
 /* Планшеты и мобильные устройства (максимальная ширина 768px) */
 @media (max-width: 768px) {
   .header {
-    background-color: #d3d3d3; /* Заменяем изображение на серый фон */
-    background-image: none; /* Убираем изображение */
-    height: 150px; /* Меньшая высота хедера */
+    background-color: #d3d3d3;
+    background-image: none;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
   }
 
   .header .text-background {
-    background: none; /* Убираем подложку */
-    backdrop-filter: none; /* Убираем размытие */
-    margin: 0 15px; /* Убираем лишние отступы */
-    padding: 0;
-    position: static; /* Снимаем абсолютное позиционирование */
+    background: none;
+    backdrop-filter: none;
+    position: static;
+    transform: none;
+    padding: 10px 0;
+    text-align: center;
   }
 
   .header .company-name {
-    font-size: 1.6em; /* Уменьшаем размер заголовка */
-    color: #333; /* Серый цвет текста */
+    font-size: 1.6em;
+    color: #333;
+  }
+
+  .map-section {
+    order: 2; /* Меняем порядок в сетке */
+    margin: 20px 0; /* Добавляем немного места сверху и снизу */
   }
 
   .map-section #map {
-    height: 300px; /* Уменьшенный размер карты */
+    height: 300px; /* Уменьшаем высоту карты для планшетов */
   }
 
   .footer-grid {
-    flex-direction: column; /* Элементы футера в столбик */
+    flex-direction: column;
   }
 
   .footer-column {
@@ -214,22 +216,26 @@ footer p {
 /* Смартфоны (максимальная ширина 480px) */
 @media (max-width: 480px) {
   .header {
-    height: 130px; /* Ещё меньшая высота */
+    height: 130px;
   }
 
   .header .company-name {
-    font-size: 1.4em; /* Ещё меньший размер заголовка */
+    font-size: 1.4em;
+  }
+
+  .map-section {
+    margin: 15px 0; /* Ещё немного места сверху/снизу */
   }
 
   .map-section #map {
-    height: 250px; /* Уменьшенная карта */
+    height: 250px; /* Ещё меньшая высота карты */
   }
 
   .footer {
-    padding: 15px 10px; /* Уменьшенные отступы для футера */
+    padding: 15px 10px;
   }
 
   footer p {
-    font-size: 0.8em; /* Более мелкий текст в футере */
+    font-size: 0.8em;
   }
 }
