@@ -132,18 +132,20 @@ a:hover {
   gap: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
+  text-align: left; /* Выравнивание текста внутри колонок футера по левому краю */
 }
 
 .footer-column {
   flex: 1 1 30%; /* Колонки занимают 30% ширины */
   min-width: 200px;
-  margin-bottom: 20px; /* Добавляем отступы между колонками на узких устройствах */
+  margin-bottom: 20px;
+  text-align: left; /* Выравнивание текста в каждой колонке по левому краю */
 }
 
 .footer-column h3,
 .footer-column p,
 .footer-column a {
-  text-align: left;
+  text-align: left; /* Текст в колонках футера выравнивается по левому краю */
   color: white;
   margin: 10px 0;
 }
@@ -159,19 +161,20 @@ a:hover {
 /* Цвет текста для строки с лицензией (ссылки) */
 .footer-license .license-text {
   color: #32cd32; /* Светло-зеленый цвет */
-  text-decoration: none; /* Убираем стандартное подчеркивание у ссылки */
+  text-decoration: none;
 }
 
 .footer-license .license-text:hover {
-  text-decoration: underline; /* Добавляем подчеркивание при наведении */
+  text-decoration: underline;
 }
 
 /* Копирайт внизу */
 footer p {
-  text-align: center;
+  text-align: center; /* Центровка текста копирайта */
   font-size: 0.9em;
-  margin-top: 20px;
+  margin: 20px 0;
 }
+
 
 /* === Адаптивность === */
 
