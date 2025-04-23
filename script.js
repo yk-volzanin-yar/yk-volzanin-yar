@@ -1,11 +1,11 @@
 // Инициализация Яндекс.Карты
 function initMap() {
   const map = new ymaps.Map("map", {
-    center: [57.649053, 39.944011],
+    center: [57.652443, 39.948898],
     zoom: 17, // Уровень масштаба
   });
 
-  const placemark = new ymaps.Placemark([57.649053, 39.944011], {
+  const placemark = new ymaps.Placemark([57.652443, 39.948898], {
     balloonContent: `
       <strong>Управляющая компания ВОЛЖАНИН</strong><br>
       Адрес: г. Ярославль, пр-кт Машиностроителей, д. 7
