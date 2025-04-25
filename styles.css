@@ -42,6 +42,17 @@ a:hover {
   border-bottom: 2px solid #e5e5e5;
 }
 
+.header .license-text {
+  color: #004d00; /* Более тёмный насыщенный зелёный цвет */
+  text-decoration: none;
+}
+
+.header .license-text:hover {
+  text-decoration: underline;
+}
+
+
+
 .header .text-background {
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(8px);
