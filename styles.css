@@ -35,9 +35,9 @@ a:hover {
   background-repeat: no-repeat;
   height: 200px;
   display: flex;
-  align-items: center;
-  text-align: left;
-  position: relative;
+  justify-content: center; /* Горизонтальное центрирование содержимого */
+  align-items: center; /* Вертикальное центрирование содержимого */
+  text-align: center; /* Центрируем текст */
   color: white;
   border-bottom: 2px solid #e5e5e5;
 }
@@ -48,12 +48,7 @@ a:hover {
   border-radius: 5px;
   padding: 20px 50px;
   display: inline-block;
-  position: absolute; /* Остаётся внутри родителя */
-  left: 5%; /* Выровняем относительно .container */
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  max-width: 1080px; /* Изменено на 1080px */
+  max-width: 1080px; /* Ширина текста ограничена */
 }
 
 .header .company-name {
@@ -173,8 +168,7 @@ footer p {
 /* Мониторы шире 1600px */
 @media (min-width: 1600px) {
   .header .text-background {
-    left: calc((100% - 1200px) / 2 + 15px); /* Подложка выровнена с контейнером */
-    max-width: 1080px; /* Изменено на 1080px */
+    max-width: 1080px; /* Оставляем максимальную ширину */
   }
 }
 
@@ -184,7 +178,8 @@ footer p {
     background-color: #d3d3d3;
     background-image: none;
     height: auto;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     padding: 20px 10px;
   }
 
@@ -244,6 +239,7 @@ footer p {
   .header .text-background {
     padding: 10px;
     font-size: 0.9em;
+    text-align: center;
   }
 
   .header .company-name {
