@@ -121,6 +121,22 @@ a:hover {
   margin: 10px 0;
 }
 
+.contacts-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contacts-info {
+  flex: 1 1 40%;
+}
+
+.contacts-map {
+  flex: 1 1 55%;
+}
+
+
 /* === Стили для футера === */
 .footer {
   background: #0056a6;
