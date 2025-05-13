@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1d6d12d7-e64d-4235-95a4-0340501e214d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/yk-volzanin-yar.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/MKD.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/Meetings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/public/volzanin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/public/volzanin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/assets/licens.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/public/licens.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/assets/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/assets/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/components/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/components/YandexMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/components/YandexMap.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/pages/Contacts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/Contacts.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2x3B4hs218mYHAOhHPNK4wK7fMa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react\public" />
+      <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react\src\assets" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d6d12d7-e64d-4235-95a4-0340501e214d" name="Changes" comment="" />
+      <created>1747156689296</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747156689296</updated>
+    </task>
+    <servers />
+  </component>
+</project>

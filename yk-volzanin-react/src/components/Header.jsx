@@ -1,25 +1,41 @@
 import { Link } from 'react-router-dom';
-import zavolga from '../assets/zavolga.jpg';
+import '../assets/styles.css';
+import { useState } from 'react';
 
 function Header() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
-    <header className="header">
-      <div class="container header-flex">
-        <div class="text-background">
-            <h1 class="company-name">Управляющая компания ООО "УК"ВОЛЖАНИН"</h1>
-            <p>
-                <a href="licens.jpg" target="_blank" class="license-text" rel="noopener noreferrer">
-                    Лицензия № 076-000336 действительна до 02.04.2030
-                </a>
-            </p>
-            <nav>
-                <Link to="/">Главная</Link> |{" "}
-                <Link to="/about">О нас</Link> |{" "}
-                <Link to="/contacts">Контакты</Link>
-            </nav>
+    <>
+      <header className="site-header">
+        <div className="nav-wrapper">
+          <div className="logo">Управляющая компания ООО «УК ВОЛЖАНИН»</div>
+          <nav className="main-nav">
+            <Link to="/">Главная</Link>
+            <Link to="/about">О нас</Link>
+            <Link to="/contacts">Контакты</Link>
+            <div className="dropdown">
+              <span>Информация ▾</span>
+              <div className="dropdown-content">
+                <Link to="/info/reports">Отчетность</Link>
+                <Link to="/info/mkd">Общие сведения по МКД</Link>
+                <Link to="/info/meetings">Общие собрания</Link>
+              </div>
+            </div>
+            <button className="license-button" onClick={() => setShowModal(true)}>Лицензия</button>
+          </nav>
         </div>
-    </div>
-    </header>
+      </header>
+
+      {showModal && (
+        <div className="modal-overlay" onClick={() => setShowModal(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <img src="/licens.jpg" alt="Лицензия" style={{ maxWidth: '100%' }} />
+            <button onClick={() => setShowModal(false)} className="close-btn">Закрыть</button>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 

@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import YandexMap from '../components/YandexMap';
 
 function Contacts() {
@@ -17,7 +16,7 @@ function Contacts() {
 
       <div className="contacts-map">
         <h2>Мы на карте</h2>
-        <YandexMap />
+        <YandexMap id="contacts-map" />
       </div>
     </section>
   );
