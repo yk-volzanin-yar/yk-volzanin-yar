@@ -4,27 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d6d12d7-e64d-4235-95a4-0340501e214d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/yk-volzanin-yar.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/MKD.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/Meetings.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="1d6d12d7-e64d-4235-95a4-0340501e214d" name="Changes" comment="improved navigation bar">
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/public/cheaters.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/public/fire.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/components/NewsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yk-volzanin-react/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/public/volzanin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/public/volzanin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/assets/licens.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/public/licens.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/assets/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/assets/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/components/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/components/YandexMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/components/YandexMap.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/pages/Contacts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/Contacts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/pages/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/About.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/pages/LegacyPage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/MKD.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/MKD.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/Meetings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/Meetings.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/Reports.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/Reports.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +29,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2x3B4hs218mYHAOhHPNK4wK7fMa" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -49,11 +44,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/liza0/OneDrive/Рабочий стол/Учёба/yk-volzanin-yar"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react" />
       <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react\public" />
       <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react\src\assets" />
     </key>
@@ -74,6 +71,19 @@
       <option name="presentableId" value="Default" />
       <updated>1747156689296</updated>
     </task>
+    <task id="LOCAL-00001" summary="improved navigation bar">
+      <option name="closed" value="true" />
+      <created>1747165058223</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747165058223</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="improved navigation bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved navigation bar" />
   </component>
 </project>

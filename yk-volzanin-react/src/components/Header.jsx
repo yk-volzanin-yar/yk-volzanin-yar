@@ -1,6 +1,6 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/styles.css';
-import { useState } from 'react';
 
 function Header() {
   const [showModal, setShowModal] = useState(false);
@@ -22,7 +22,12 @@ function Header() {
                 <Link to="/info/meetings">Общие собрания</Link>
               </div>
             </div>
-            <button className="license-button" onClick={() => setShowModal(true)}>Лицензия</button>
+            <button
+              className="license-button"
+              onClick={() => setShowModal(true)}
+            >
+              Лицензия
+            </button>
           </nav>
         </div>
       </header>
@@ -31,7 +36,9 @@ function Header() {
         <div className="modal-overlay" onClick={() => setShowModal(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <img src="/licens.jpg" alt="Лицензия" style={{ maxWidth: '100%' }} />
-            <button onClick={() => setShowModal(false)} className="close-btn">Закрыть</button>
+            <button onClick={() => setShowModal(false)} className="close-btn">
+              Закрыть
+            </button>
           </div>
         </div>
       )}
