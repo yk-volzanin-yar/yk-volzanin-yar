@@ -4,10 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d6d12d7-e64d-4235-95a4-0340501e214d" name="Changes" comment="add SEO meta tags and structured data">
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/public/zavolga.jpg" afterDir="false" />
+    <list default="true" id="1d6d12d7-e64d-4235-95a4-0340501e214d" name="Changes" comment="add test OG image">
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_10.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_11.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_4.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_5.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_6.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_7.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_8.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_9.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/assets/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/assets/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/components/NewsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/components/NewsList.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +51,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react" />
+      <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react\src" />
       <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react\public" />
-      <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react\src\assets" />
+      <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react\public\news" />
+      <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react\news" />
+      <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -99,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750360219429</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add test OG image">
+      <option name="closed" value="true" />
+      <created>1750362236642</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1750362236642</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -108,6 +131,7 @@
     <MESSAGE value="clean up and refactor" />
     <MESSAGE value="adjust header image position and make footer stick to bottom" />
     <MESSAGE value="add SEO meta tags and structured data" />
-    <option name="LAST_COMMIT_MESSAGE" value="add SEO meta tags and structured data" />
+    <MESSAGE value="add test OG image" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test OG image" />
   </component>
 </project>

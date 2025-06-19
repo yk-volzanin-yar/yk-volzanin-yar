@@ -296,6 +296,22 @@ a:hover {
   margin: 5px 0 0;
 }
 
+.load-more-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0b4d91;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background-color: #093d76;
+}
+
 /* === Sidebar === */
 .sidebar {
   display: flex;
