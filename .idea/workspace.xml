@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d6d12d7-e64d-4235-95a4-0340501e214d" name="Changes" comment="clean up and refactor">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="1d6d12d7-e64d-4235-95a4-0340501e214d" name="Changes" comment="adjust header image position and make footer stick to bottom">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/assets/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/assets/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,13 +82,22 @@
       <option name="project" value="LOCAL" />
       <updated>1747948790903</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adjust header image position and make footer stick to bottom">
+      <option name="closed" value="true" />
+      <created>1750358427467</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1750358427467</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="improved navigation bar" />
     <MESSAGE value="added styles and news" />
     <MESSAGE value="clean up and refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up and refactor" />
+    <MESSAGE value="adjust header image position and make footer stick to bottom" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjust header image position and make footer stick to bottom" />
   </component>
 </project>
