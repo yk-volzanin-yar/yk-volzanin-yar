@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d6d12d7-e64d-4235-95a4-0340501e214d" name="Changes" comment="improved navigation bar">
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/public/cheaters.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/public/fire.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/components/NewsList.jsx" afterDir="false" />
+    <list default="true" id="1d6d12d7-e64d-4235-95a4-0340501e214d" name="Changes" comment="clean up and refactor">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/assets/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/assets/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/pages/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/About.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/pages/LegacyPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/MKD.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/MKD.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/Meetings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/Meetings.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/Reports.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/pages/info/Reports.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +68,29 @@
       <option name="project" value="LOCAL" />
       <updated>1747165058223</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added styles and news">
+      <option name="closed" value="true" />
+      <created>1747948626131</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747948626131</updated>
+    </task>
+    <task id="LOCAL-00003" summary="clean up and refactor">
+      <option name="closed" value="true" />
+      <created>1747948790903</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747948790903</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="improved navigation bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved navigation bar" />
+    <MESSAGE value="added styles and news" />
+    <MESSAGE value="clean up and refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up and refactor" />
   </component>
 </project>
