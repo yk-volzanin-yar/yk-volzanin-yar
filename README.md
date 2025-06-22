@@ -1,3 +1,11 @@
+разработка
+в корне проекта
+npm install
+npm run dev
+
+деплой
+npm install --save-dev gh-pages
+
 gitflow
 
 1. главная ветка - dev
