@@ -1,0 +1,49 @@
+# Mac system files
+.DS_Store
+
+# WebStorm (JetBrains IDEs)
+.idea/
+*.iml
+
+# Build output
+dist/
+dist-ssr/
+*.local
+
+# Dependency directories
+node_modules/
+yk-volzanin-react/node_modules/
+
+# Test coverage
+coverage/
+yk-volzanin-react/coverage/
+
+# Env files (содержат секретные данные)
+.env
+.env.*
+yk-volzanin-react/.env
+yk-volzanin-react/.env.*
+
+# Vite cache
+.vite/
+yk-volzanin-react/.vite/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+logs/
+*.log
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+
+# Miscellaneous
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
