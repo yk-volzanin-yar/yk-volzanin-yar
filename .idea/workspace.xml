@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d6d12d7-e64d-4235-95a4-0340501e214d" name="Changes" comment="add test OG image">
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_10.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_11.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_4.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_5.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_6.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_7.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_8.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yk-volzanin-react/src/news/news_9.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yk-volzanin-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/assets/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/assets/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/src/components/NewsList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/src/components/NewsList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +16,37 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature-1-сделать_каркас_приложения_на_реакт" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1750582627" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature-1-сделать_каркас_приложения_на_реакт" />
+                    <option name="lastUsedInstant" value="1750582626" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -46,7 +64,13 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/liza0/OneDrive/Рабочий стол/Учёба/yk-volzanin-yar"
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "dev",
+    "last_opened_file_path": "C:/Users/liza0/OneDrive/Рабочий стол/Учёба/yk-volzanin-yar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="RecentsManager">
