@@ -51,7 +51,7 @@ a:hover {
 
 /* === Хедер и навигация === */
 .site-header {
-  background-image: url('../assets/zavolga.jpg');
+  background-image: url('zavolga.jpg');
   background-size: cover;
   background-position: center -150px;
   background-repeat: no-repeat;

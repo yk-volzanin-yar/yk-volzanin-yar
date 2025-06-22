@@ -1,4 +1,4 @@
-import YandexMap from '../components/YandexMap';
+import YandexMap from '../components/YandexMap.jsx';
 
 function Contacts() {
   return (

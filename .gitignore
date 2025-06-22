@@ -26,7 +26,6 @@ yk-volzanin-react/.env.*
 
 # Vite cache
 .vite/
-yk-volzanin-react/.vite/
 
 # Log files
 npm-debug.log*

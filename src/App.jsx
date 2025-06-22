@@ -1,14 +1,14 @@
 import './assets/styles.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contacts from './pages/Contacts'
-import Info from './pages/Info';
-import Reports from './pages/info/Reports';
-import MKD from './pages/info/MKD';
-import Meetings from './pages/info/Meetings';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import Contacts from './pages/Contacts.jsx'
+import Info from './pages/Info.jsx';
+import Reports from './pages/info/Reports.jsx';
+import MKD from './pages/info/MKD.jsx';
+import Meetings from './pages/info/Meetings.jsx';
 
 function App() {
   return (

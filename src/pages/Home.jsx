@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import NewsList from '../components/NewsList';
+import NewsList from '../components/NewsList.jsx';
 
 function Home() {
   const [showModal, setShowModal] = useState(false);
