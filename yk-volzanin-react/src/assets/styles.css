@@ -1,0 +1,425 @@
+/* === Общие стили === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2e2e2e;
+  line-height: 1.6;
+  background-color: #f5f7fa;
+}
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #0b4d91;
+  margin-top: 0;
+}
+
+a {
+  color: #0b4d91;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Хедер и навигация === */
+.site-header {
+  background-image: url('../assets/zavolga.jpg');
+  background-size: cover;
+  background-position: center -150px;
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 240px;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-wrapper {
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.main-nav a,
+.main-nav span,
+.main-nav .license-button {
+  color: white;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav span:hover,
+.main-nav .license-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: #0b4d91;
+  padding: 12px;
+  display: none;
+  flex-direction: column;
+  min-width: 200px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  border-radius: 4px;
+}
+
+
+.dropdown-content a {
+  color: #0b4d91;
+  padding: 6px 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+/* === Модалка === */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 80vh;
+  border-radius: 4px;
+}
+
+.close-btn {
+  margin-top: 12px;
+  padding: 6px 16px;
+  background-color: #0b4d91;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.close-btn:hover {
+  background-color: #093d76;
+}
+
+/* === Контент === */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 24px;
+}
+
+.main-content {
+  padding: 0;
+}
+
+.info, .schedule, .contacts {
+  margin-bottom: 24px;
+}
+
+.map-section #map {
+  width: 100%;
+  height: 400px;
+  min-height: 300px;
+}
+
+.contacts-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contacts-info {
+  flex: 1 1 40%;
+}
+
+.contacts-map {
+  flex: 1 1 55%;
+}
+
+/* === Футер === */
+.footer {
+  background-color: #0b4d91;
+  color: white;
+  padding: 30px 20px;
+  font-size: 1rem;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.footer p {
+  margin: 6px 0;
+  color: white;
+}
+
+.footer p strong {
+  font-size: 1.1em;
+}
+
+/* === Лента новостей === */
+.home-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.news-section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-section h2 {
+  margin-bottom: 15px;
+  color: #0b4d91;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 5px;
+  font-size: 2em;
+}
+
+.news-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-item h3 {
+  margin: 5px 0;
+  font-size: 1.2em;
+  color: #003d73;
+}
+
+.news-item p {
+  margin: 0;
+  font-size: 1em;
+  color: #333;
+}
+
+.news-item .news-date {
+  font-size: 0.95em;
+  color: #999;
+  margin: 5px 0 0;
+}
+
+.load-more-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0b4d91;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background-color: #093d76;
+}
+
+/* === Sidebar === */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.emergency-box {
+  background-color: #ffffff;
+  border-left: 4px solid #0b4d91;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+}
+
+.emergency-box h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+  color: #0b4d91;
+}
+
+.reminder-img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  object-fit: contain;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.reminder-img:hover {
+  transform: scale(1.02);
+}
+
+/* === Адаптивность === */
+@media (max-width: 768px) {
+  .nav-wrapper {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts-layout {
+    flex-direction: column;
+  }
+
+  .modal-content img {
+    max-height: 60vh;
+  }
+
+  .sidebar {
+    order: 1;
+  }
+
+  .reminder-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .news-item h3 {
+    font-size: 1.1em;
+  }
+
+  .news-item p {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer p {
+    font-size: 0.9em;
+  }
+
+  .modal-content {
+    padding: 10px;
+  }
+
+  .modal-content img {
+    max-height: 50vh;
+  }
+
+  .close-btn {
+    padding: 5px 12px;
+    font-size: 0.9rem;
+  }
+
+  .reminder-img {
+    border-radius: 4px;
+  }
+}
