@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d6d12d7-e64d-4235-95a4-0340501e214d" name="Changes" comment="gitignore">
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yk-volzanin-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/yk-volzanin-react/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,26 +61,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/liza0/OneDrive/Рабочий стол/Учёба/yk-volzanin-yar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "dev",
+    "last_opened_file_path": "C:/Users/liza0/OneDrive/Рабочий стол/Учёба/yk-volzanin-yar/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\public" />
       <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react\src" />
       <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react\public" />
       <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react\public\news" />
       <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react\news" />
-      <recent name="C:\Users\liza0\OneDrive\Рабочий стол\Учёба\yk-volzanin-yar\yk-volzanin-react" />
     </key>
   </component>
   <component name="SharedIndexes">
