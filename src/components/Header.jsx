@@ -9,7 +9,7 @@ function Header() {
     <>
       <header className="site-header">
         <div className="nav-wrapper">
-          <div className="logo">Управляющая компания ООО «УК ВОЛЖАНИН»</div>
+          <div className="logo">Управляющая организация ООО «ВОЛЖАНИН»</div>
           <nav className="main-nav">
             <Link to="/">Главная</Link>
             <Link to="/about">О нас</Link>
