@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d6d12d7-e64d-4235-95a4-0340501e214d" name="Changes" comment="gitignore">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/news/news_1.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/news/news_1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/news/news_10.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/news/news_11.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/news/news_2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/news/news_3.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/news/news_4.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/news/news_5.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/news/news_6.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/news/news_7.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/news/news_8.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/news/news_9.md" beforeDir="false" />
-    </list>
+    <list default="true" id="1d6d12d7-e64d-4235-95a4-0340501e214d" name="Changes" comment="gitignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
