@@ -27,22 +27,44 @@ function Home() {
 
           <div
             className="placeholder-img"
-            onClick={() => handleOpenImage('/cheaters.jpg')}
+            onClick={() => handleOpenImage('/infografika-0.jpg')}
           >
             <img
-              src="/cheaters.jpg"
-              alt="Мошенники"
+              src="/infografika-0.jpg"
+              alt="СРОКИ ОТВЕТОВ И РЕАКЦИИ НА ЗАЯВКИ В АВАРИЙНО-ДИСПЕТЧЕРСКУЮ СЛУЖБУ"
               className="reminder-img"
             />
           </div>
 
           <div
             className="placeholder-img"
-            onClick={() => handleOpenImage('/fire.jpg')}
+            onClick={() => handleOpenImage('/infografika-1.jpg')}
           >
             <img
-              src="/fire.jpg"
-              alt="Действия при пожаре"
+              src="/infografika-1.jpg"
+              alt="СРОКИ ОТВЕТОВ И РЕАКЦИИ НА ЗАПРОСЫ ДЛЯ ПРОВЕРКИ НАЧИСЛЕНИЙ ПЛАТЫ,ПЕРЕРАСЧЕТОВ ПЛАТЫ"
+              className="reminder-img"
+            />
+          </div>
+
+          <div
+            className="placeholder-img"
+            onClick={() => handleOpenImage('/infografika-2.jpg')}
+          >
+            <img
+              src="/infografika-2.jpg"
+              alt="СРОКИ ОТВЕТОВ И РЕАКЦИИ НА ЗАКЛЮЧЕНИЕ ДОГОВОРА, СОДЕРЖАЩЕГО ПОЛОЖЕНИЯ О ПРЕДОСТАВЛЕНИИ КОММУНАЛЬНЫХ УСЛУГ"
+              className="reminder-img"
+            />
+          </div>
+
+          <div
+            className="placeholder-img"
+            onClick={() => handleOpenImage('/infografika-3.jpg')}
+          >
+            <img
+              src="/infografika-3.jpg"
+              alt="СРОКИ ОТВЕТОВ И РЕАКЦИИ НА ОБРАЩЕНИЯ И ЗАЯВКИ, СВЯЗАННЫЕ С ПРИБОРАМИ УЧЕТ"
               className="reminder-img"
             />
           </div>
