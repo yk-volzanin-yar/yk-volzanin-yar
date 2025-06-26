@@ -41,7 +41,7 @@ function YandexMap({ center = [57.652443, 39.948898], zoom = 17, id = 'map' }) {
 
         const placemark = new window.ymaps.Placemark(center, {
           balloonContent: `
-            <strong>Управляющая компания ВОЛЖАНИН</strong><br>
+            <strong>Управляющая компания «ВОЛЖАНИН»</strong><br>
             Адрес: г. Ярославль, пр-кт Машиностроителей, д. 7
           `,
         });
