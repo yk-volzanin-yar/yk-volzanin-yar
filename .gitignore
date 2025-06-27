@@ -3,7 +3,6 @@
 
 # WebStorm (JetBrains IDEs)
 .idea/
-.idea/workspace.xml
 *.iml
 
 # Build output
