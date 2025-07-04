@@ -366,6 +366,76 @@ a:hover {
   transform: scale(1.02);
 }
 
+/* === Информация === */
+.info-page {
+  text-align: left;
+}
+
+.info-title {
+  margin-bottom: 20px;
+  color: #0b4d91;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 8px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.info-links h3 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.info-links a {
+  color: #000;
+  text-decoration: underline;
+  font-size: 1em;
+  transition: color 0.2s;
+}
+
+.info-links a:hover {
+  color: #003d73;
+}
+
+.info-links {
+  text-align: left;
+}
+
+.toggle-content {
+  max-width: 250vh;
+  margin: 10px 0 30px;
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+.toggle-content pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.toggle-content img {
+  max-width: 30%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border-radius: 4px;
+}
+
+.toggle-link {
+  cursor: pointer;
+  color: #000;
+  text-decoration: underline;
+  font-size: 1.2em;
+  margin: 20px 0;
+  transition: color 0.2s;
+  text-align: left;
+}
+
+.toggle-link:hover {
+  color: #003d73;
+}
+
 /* === Адаптивность === */
 @media (max-width: 768px) {
   .nav-wrapper {
