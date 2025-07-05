@@ -56,7 +56,7 @@ a:hover {
   background-position: center -150px;
   background-repeat: no-repeat;
   color: white;
-  min-height: 240px;
+  min-height: 480px;
   display: flex;
   align-items: flex-end;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -150,7 +150,7 @@ a:hover {
 
 .modal-content {
   background: white;
-  padding: 20px;
+  padding: 35px;
   border-radius: 8px;
   max-width: 90vw;
   max-height: 90vh;
@@ -164,7 +164,7 @@ a:hover {
   width: 100%;
   height: auto;
   object-fit: contain;
-  max-height: 80vh;
+  max-height: 83vh;
   border-radius: 4px;
 }
 
@@ -453,6 +453,11 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
+  .site-header {
+    background-position: center;
+    min-height: 240px;
+  }
+
   .contacts-layout {
     flex-direction: column;
   }
@@ -480,6 +485,11 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+   .site-header {
+    background-position: center;
+    min-height: 240px;
+  }
+
   .logo {
     font-size: 1.3rem;
   }
