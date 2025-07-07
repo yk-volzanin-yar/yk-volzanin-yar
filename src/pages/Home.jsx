@@ -6,8 +6,12 @@ function Home() {
   const [activeImage, setActiveImage] = useState(null);
 
   const handleOpenImage = (src) => {
-    setActiveImage(src);
-    setShowModal(true);
+    if (window.innerWidth <= 768) {
+      window.open(src, '_blank');
+    } else {
+      setActiveImage(src);
+      setShowModal(true);
+    }
   };
 
   return (
@@ -21,7 +25,7 @@ function Home() {
             <h3>Единый диспетчерский центр</h3>
             <p>
               <strong>Телефон:</strong>{' '}
-              <a href="tel:+74852304500">(4852) 30-45-00</a>
+              <a href="tel:203045">20-30-45</a>
             </p>
           </div>
 
