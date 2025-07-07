@@ -22,12 +22,13 @@ function Header() {
           <Link to="/about">О нас</Link>
           <Link to="/contacts">Контакты</Link>
           <div className="dropdown">
-            <span>Информация ▾</span>
-            <div className="dropdown-content">
-              <Link to="/info/reports">Отчетность</Link>
-              <Link to="/info/mkd">Общие сведения по МКД</Link>
-              <Link to="/info/meetings">Общие собрания</Link>
-            </div>
+              <Link to="/info">Информация ▾</Link>
+              <div className="dropdown-content">
+                  <Link to="/info/general">Общая информация</Link>
+                  <Link to="/info/reports">Отчетность</Link>
+                  <Link to="/info/mkd">Общие сведения по МКД</Link>
+                  <Link to="/info/meetings">Общие собрания</Link>
+              </div>
           </div>
           <button onClick={handleOpenLicense} className="license-button">Лицензия</button>
         </nav>

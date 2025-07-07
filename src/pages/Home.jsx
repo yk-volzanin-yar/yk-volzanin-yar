@@ -72,6 +72,28 @@ function Home() {
               className="reminder-img"
             />
           </div>
+
+          <div
+            className="placeholder-img"
+            onClick={() => handleOpenImage('/ice.png')}
+          >
+            <img
+              src="/ice.png"
+              alt="Безопасное поведение при гололеде"
+              className="reminder-img"
+            />
+          </div>
+
+          <div
+            className="placeholder-img"
+            onClick={() => handleOpenImage('/gas_leak.png')}
+          >
+            <img
+              src="/gas_leak.png"
+              alt="СРОКИ ОТВЕТОВ И РЕАКЦИИ НА ЗАЯВКИ В АВАРИЙНО-ДИСПЕТЧЕРСКУЮ СЛУЖБУ"
+              className="reminder-img"
+            />
+          </div>
         </aside>
       </div>
 
