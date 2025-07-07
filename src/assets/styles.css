@@ -401,25 +401,31 @@ a:hover {
 }
 
 .toggle-content {
-  max-width: 250vh;
-  margin: 10px 0 30px;
-  text-align: left;
-  font-size: 1.2em;
   line-height: 1.6;
+  font-size: 1.1em;
+  color: #2e2e2e;
+  max-width: 100%;
   overflow-x: auto;
 }
 
-.toggle-content pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
+.toggle-content p {
+  margin: 0 0 1em;
+}
+
+.toggle-content ul {
+  padding-left: 1.5em;
+}
+
+.toggle-content li {
+  margin-bottom: 0.5em;
 }
 
 .toggle-content img {
+  display: block;
   max-width: 30%;
   height: auto;
-  display: block;
   margin: 15px auto;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .toggle-link {

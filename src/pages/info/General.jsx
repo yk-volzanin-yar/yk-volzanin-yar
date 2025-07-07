@@ -1,5 +1,8 @@
 import { useState } from 'react';
+import { marked } from 'marked';
 import '../../assets/styles.css';
+
+marked.setOptions({ breaks: true });
 
 const txtFiles = import.meta.glob('/src/general/*.txt', {
   query: '?raw',
@@ -54,9 +57,12 @@ function GeneralInfo() {
               {file.displayName} {open[file.fileName] ? '▲' : '▼'}
             </h3>
             {open[file.fileName] && (
-              <div className="toggle-content">
-                <pre>{file.rawContent}</pre>
-              </div>
+              <div
+                className="toggle-content"
+                dangerouslySetInnerHTML={{
+                  __html: marked.parse(file.rawContent),
+                }}
+              />
             )}
           </div>
         ))}
