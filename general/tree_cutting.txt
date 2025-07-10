@@ -1,2 +1,2 @@
-![Спил деревьев](/src/general/images/cutting_trees.png)
+![Спил деревьев](/general/images/cutting_trees.png)
 Спил сухих деревьев  по заявкам жильцов, нашей Управляющей организацией.
