@@ -32,9 +32,21 @@ function Header() {
             <div className="dropdown-content">
               <Link to="/info/general">Общая информация</Link>
               <Link to="/info/reports">Отчетность в межотопительный период</Link>
+              <Link to="/info/ventilation">Проверка вентиляции в МКД</Link>
+              <Link to="/info/heating-readiness">Готовность МКД к отопительному периоду</Link>
             </div>
           </div>
           <button onClick={handleOpenLicense} className="license-button">Лицензия</button>
+          <Link to="/projects">Проекты</Link>
+          <Link to="/vacancies">Вакансии</Link>
+          <a
+            href="https://dom.gosuslugi.ru/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="external-link"
+          >
+            ГИС ЖКХ ⤴
+          </a>
         </nav>
       </div>
 
