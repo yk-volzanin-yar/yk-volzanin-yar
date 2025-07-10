@@ -4,7 +4,7 @@ function Contacts() {
   return (
     <section className="contacts-layout">
       <div className="contacts-info">
-        <h2>Контакты</h2>
+        <h1>Контакты</h1>
         <p>Приемная: <a href="tel:203045">20-30-45</a></p>
         <p>Телефон: <a href="tel:+79201260144">+7 920 126 0144</a></p>
         <p>Аварийный номер: <a href="tel:+79038221585">+7 903 822 1585</a></p>
