@@ -43,7 +43,12 @@ function Header() {
   return (
     <header className="site-header">
       <div className="nav-wrapper">
-        <div className="logo">Управляющая организация ООО «ВОЛЖАНИН»</div>
+        <div className="logo-container">
+          <img src="/logo.svg" alt="УК Волжанин" className="header-logo-img" />
+          <div className="logo">
+            Управляющая организация ООО «ВОЛЖАНИН»
+          </div>
+        </div>
 
         <nav className="main-nav">
           <Link to="/">Главная</Link>

@@ -76,6 +76,7 @@ a:hover {
   display: flex;
   align-items: flex-end;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 2000;
 }
 
 .nav-wrapper {
@@ -149,7 +150,7 @@ a:hover {
   flex-direction: column;
   min-width: 250px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  z-index: 100;
+  z-index: 1000;
   border-radius: 4px;
 }
 
@@ -468,7 +469,7 @@ a:hover {
 .services-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .services-left {
@@ -616,6 +617,12 @@ a:hover {
     min-width: 100px;
   }
 
+  .welcome-text {
+    font-size: 1em;
+    padding: 0.8rem 1rem 0.8rem 5rem;
+    line-height: 1.4;
+  }
+
   .main-grid {
     grid-template-columns: 1fr;
   }
@@ -659,6 +666,12 @@ a:hover {
 
   .logo {
     font-size: 1.3rem;
+  }
+
+  .welcome-text {
+    font-size: 1em;
+    padding: 0.8rem 1rem 0.8rem 5rem;
+    line-height: 1.4;
   }
 
   .footer {
