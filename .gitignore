@@ -1,9 +1,8 @@
-# Mac system files
+# Mac system general
 .DS_Store
 
 # WebStorm (JetBrains IDEs)
 .idea/
-.idea/workspace.xml
 *.iml
 
 # Build output
@@ -19,7 +18,7 @@ yk-volzanin-react/node_modules/
 coverage/
 yk-volzanin-react/coverage/
 
-# Env files (содержат секретные данные)
+# Env general (содержат секретные данные)
 .env
 .env.*
 yk-volzanin-react/.env
@@ -28,7 +27,7 @@ yk-volzanin-react/.env.*
 # Vite cache
 .vite/
 
-# Log files
+# Log general
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -37,7 +36,7 @@ lerna-debug.log*
 logs/
 *.log
 
-# Editor directories and files
+# Editor directories and general
 .vscode/
 !.vscode/extensions.json
 

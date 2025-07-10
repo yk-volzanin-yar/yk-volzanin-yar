@@ -35,7 +35,23 @@ main {
   padding: 20px;
 }
 
-h1, h2, h3 {
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #0b4d91;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: #0b4d91;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
   color: #0b4d91;
   margin-top: 0;
 }
@@ -56,7 +72,7 @@ a:hover {
   background-position: center -150px;
   background-repeat: no-repeat;
   color: white;
-  min-height: 240px;
+  min-height: 480px;
   display: flex;
   align-items: flex-end;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -71,6 +87,17 @@ a:hover {
   flex-direction: column;
   align-items: center;
   gap: 12px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-logo-img {
+  height: 50px;
+  width: auto;
 }
 
 .logo {
@@ -150,7 +177,7 @@ a:hover {
 
 .modal-content {
   background: white;
-  padding: 20px;
+  padding: 35px;
   border-radius: 8px;
   max-width: 90vw;
   max-height: 90vh;
@@ -164,7 +191,7 @@ a:hover {
   width: 100%;
   height: auto;
   object-fit: contain;
-  max-height: 80vh;
+  max-height: 83vh;
   border-radius: 4px;
 }
 
@@ -209,7 +236,6 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 2rem;
 }
 
 .contacts-info {
@@ -218,6 +244,36 @@ a:hover {
 
 .contacts-map {
   flex: 1 1 55%;
+}
+
+/* Приветственный блок */
+.welcome-text {
+  position: relative;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 1rem 1.5rem 1rem 6.5rem;
+  margin-bottom: 1.4rem;
+  font-size: 1.55em;
+  font-weight: 700;
+  line-height: 1.5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  width: 3em;
+  height: 3em;
+  background-image: url('/logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.welcome-text p {
+  margin: 0;
 }
 
 /* === Футер === */
@@ -350,6 +406,14 @@ a:hover {
   color: #0b4d91;
 }
 
+.phone-number {
+  display: inline-block;
+}
+
+.phone-number.second {
+    padding-left: 10ch;
+}
+
 .reminder-img {
   display: block;
   max-width: 100%;
@@ -364,6 +428,153 @@ a:hover {
 
 .reminder-img:hover {
   transform: scale(1.02);
+}
+
+/* === Работы и услуги === */
+.services-page {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.services-title {
+  font-size: 2.2em;
+  margin-bottom: 1rem;
+  color: #004b8d;
+}
+
+.services-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.services-left {
+  flex: 1 1 30%;
+  max-width: 400px;
+}
+
+.services-main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.services-right {
+  flex: 1 1 60%;
+}
+
+.services-phones {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.services-phones a {
+  color: #2e2e2e;
+  text-decoration: none;
+}
+
+.services-phones a:hover {
+  text-decoration: underline;
+}
+
+.services-right ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.services-right h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #004b8d;
+}
+
+.services-right h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #004b8d;
+}
+
+.services-right h4 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* === Информация === */
+.info-page {
+  text-align: left;
+}
+
+.info-title {
+  margin-bottom: 20px;
+  color: #0b4d91;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 8px;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.info-links h3 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.info-links a {
+  color: #000;
+  text-decoration: underline;
+  font-size: 1em;
+  transition: color 0.2s;
+}
+
+.info-links a:hover {
+  color: #003d73;
+}
+
+.info-links {
+  text-align: left;
+}
+
+.toggle-content {
+  line-height: 1.6;
+  font-size: 1.1em;
+  color: #2e2e2e;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.toggle-content p {
+  margin: 0 0 1em;
+}
+
+.toggle-content ul {
+  padding-left: 1.5em;
+}
+
+.toggle-content li {
+  margin-bottom: 0.5em;
+}
+
+.toggle-content img {
+  display: block;
+  max-width: 30%;
+  height: auto;
+  margin: 15px auto;
+  border-radius: 6px;
+}
+
+.toggle-link {
+  cursor: pointer;
+  color: #000;
+  text-decoration: underline;
+  font-size: 1.2em;
+  margin: 20px 0;
+  transition: color 0.2s;
+  text-align: left;
+}
+
+.toggle-link:hover {
+  color: #003d73;
 }
 
 /* === Адаптивность === */
@@ -381,6 +592,11 @@ a:hover {
 
   .main-grid {
     grid-template-columns: 1fr;
+  }
+
+  .site-header {
+    background-position: center;
+    min-height: 240px;
   }
 
   .contacts-layout {
@@ -410,6 +626,11 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+   .site-header {
+    background-position: center;
+    min-height: 240px;
+  }
+
   .logo {
     font-size: 1.3rem;
   }
