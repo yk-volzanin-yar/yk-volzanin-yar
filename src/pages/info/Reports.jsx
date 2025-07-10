@@ -26,7 +26,7 @@ function ReportsInfo() {
 
   return (
     <section className="info-page container">
-      <h1 className="info-title">Отчетность в межотопительный период</h1>
+      <h1 className="info-title">Регламентные мероприятия готовности МКД к отопительному периоду</h1>
 
       <div className="info-links">
         {fileMap.map(([title, fileName]) => (

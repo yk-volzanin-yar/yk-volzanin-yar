@@ -59,9 +59,8 @@ function Header() {
             <Link to="/info">Информация ▾</Link>
             <div className="dropdown-content">
               <Link to="/info/general">Общая информация</Link>
-              <Link to="/info/reports">Отчетность в межотопительный период</Link>
+              <Link to="/info/reports">Регламентные мероприятия готовности МКД к отопительному периоду</Link>
               <Link to="/info/ventilation">Проверка вентиляции в МКД</Link>
-              <Link to="/info/heating-readiness">Готовность МКД к отопительному периоду</Link>
             </div>
           </div>
           <button onClick={handleOpenLicense} className="license-button">Лицензия</button>
