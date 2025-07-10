@@ -31,9 +31,7 @@ function Header() {
             <Link to="/info">Информация ▾</Link>
             <div className="dropdown-content">
               <Link to="/info/general">Общая информация</Link>
-              <Link to="/info/reports">Отчетность</Link>
-              <Link to="/info/mkd">Общие сведения по МКД</Link>
-              <Link to="/info/meetings">Общие собрания</Link>
+              <Link to="/info/reports">Отчетность в межотопительный период</Link>
             </div>
           </div>
           <button onClick={handleOpenLicense} className="license-button">Лицензия</button>

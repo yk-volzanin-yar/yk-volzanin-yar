@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { marked } from 'marked';
 import '../../assets/styles.css';
-import { fileMap } from '../../general/fileMap.js';
+import { fileMap } from '../../maps/generalMap.js';
 
 marked.setOptions({ breaks: true });
 
