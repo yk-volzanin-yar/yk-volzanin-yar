@@ -4,7 +4,7 @@ import '../assets/styles.css';
 
 function Header() {
   const [showModal, setShowModal] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
   const handleOpenLicense = () => {
@@ -19,16 +19,22 @@ function Header() {
     if (audioRef.current) {
       if (isPlaying) {
         audioRef.current.pause();
+        setIsPlaying(false);
       } else {
-        audioRef.current.play();
+        audioRef.current.play().then(() => {
+          setIsPlaying(true);
+        }).catch(() => {
+          console.log('Autoplay was prevented by the browser.');
+        });
       }
-      setIsPlaying(!isPlaying);
     }
   };
 
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.play().catch(() => {
+      audioRef.current.play().then(() => {
+        setIsPlaying(true);
+      }).catch(() => {
         console.log('Autoplay was prevented by the browser.');
       });
     }
