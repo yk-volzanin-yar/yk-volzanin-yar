@@ -1,4 +1,4 @@
-# Mac system general
+# Mac system maps
 .DS_Store
 
 # WebStorm (JetBrains IDEs)
@@ -18,7 +18,7 @@ yk-volzanin-react/node_modules/
 coverage/
 yk-volzanin-react/coverage/
 
-# Env general (содержат секретные данные)
+# Env maps (содержат секретные данные)
 .env
 .env.*
 yk-volzanin-react/.env
@@ -27,7 +27,7 @@ yk-volzanin-react/.env.*
 # Vite cache
 .vite/
 
-# Log general
+# Log maps
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -36,7 +36,7 @@ lerna-debug.log*
 logs/
 *.log
 
-# Editor directories and general
+# Editor directories and maps
 .vscode/
 !.vscode/extensions.json
 

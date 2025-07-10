@@ -147,7 +147,7 @@ a:hover {
   padding: 12px;
   display: none;
   flex-direction: column;
-  min-width: 200px;
+  min-width: 250px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   z-index: 100;
   border-radius: 4px;
@@ -590,6 +590,10 @@ a:hover {
     gap: 10px;
   }
 
+    .dropdown-content {
+    min-width: 100px;
+  }
+
   .main-grid {
     grid-template-columns: 1fr;
   }
@@ -658,5 +662,9 @@ a:hover {
 
   .reminder-img {
     border-radius: 4px;
+  }
+
+  .dropdown-content {
+    min-width: 50px;
   }
 }
