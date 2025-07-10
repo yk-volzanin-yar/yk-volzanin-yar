@@ -16,19 +16,25 @@ function Header() {
   return (
     <header className="site-header">
       <div className="nav-wrapper">
-        <div className="logo">Управляющая организация ООО «ВОЛЖАНИН»</div>
+        <div className="logo-container">
+          <img src="/logo_with_text.svg" alt="УК Волжанин" className="header-logo-img" />
+          <div className="logo">
+            Управляющая организация ООО «ВОЛЖАНИН»
+          </div>
+        </div>
         <nav className="main-nav">
           <Link to="/">Главная</Link>
+          <Link to="/services">Работы и услуги</Link>
           <Link to="/about">О нас</Link>
           <Link to="/contacts">Контакты</Link>
           <div className="dropdown">
-              <Link to="/info">Информация ▾</Link>
-              <div className="dropdown-content">
-                  <Link to="/info/general">Общая информация</Link>
-                  <Link to="/info/reports">Отчетность</Link>
-                  <Link to="/info/mkd">Общие сведения по МКД</Link>
-                  <Link to="/info/meetings">Общие собрания</Link>
-              </div>
+            <Link to="/info">Информация ▾</Link>
+            <div className="dropdown-content">
+              <Link to="/info/general">Общая информация</Link>
+              <Link to="/info/reports">Отчетность</Link>
+              <Link to="/info/mkd">Общие сведения по МКД</Link>
+              <Link to="/info/meetings">Общие собрания</Link>
+            </div>
           </div>
           <button onClick={handleOpenLicense} className="license-button">Лицензия</button>
         </nav>
