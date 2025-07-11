@@ -70,10 +70,10 @@ a:hover {
 .site-header {
   background-image: url('zavolga.jpg');
   background-size: cover;
-  background-position: center -150px;
+  background-position: center -140px;
   background-repeat: no-repeat;
   color: white;
-  min-height: 480px;
+  min-height: 600px;
   display: flex;
   align-items: flex-end;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);

@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { marked } from 'marked';
 import '../../assets/styles.css';
-import { fileMap } from '../../maps/ventilationMap.js';
+import { fileMap } from '../../maps/companyMap.js';
 
 marked.setOptions({ breaks: true });
 
-function VentilationInfo() {
+function CompanyInfo() {
   const [open, setOpen] = useState({});
   const [texts, setTexts] = useState({});
 
@@ -16,7 +16,7 @@ function VentilationInfo() {
     }
 
     if (fileName.endsWith('.txt') && !texts[fileName]) {
-      const res = await fetch(`/ventilation/${fileName}`);
+      const res = await fetch(`/company/${fileName}`);
       const raw = await res.text();
       setTexts((prev) => ({ ...prev, [fileName]: raw }));
     }
@@ -26,7 +26,7 @@ function VentilationInfo() {
 
   return (
     <section className="info-page container">
-      <h1 className="info-title">Проверка вентиляции в МКД</h1>
+      <h1 className="info-title">Отчетная деятельность компании</h1>
 
       <div className="info-links">
         {fileMap.map(([title, fileName]) => (
@@ -47,7 +47,7 @@ function VentilationInfo() {
           ) : (
             <h3 key={fileName}>
               <a
-                href={`/ventilation/${fileName}`}
+                href={`/company/${fileName}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -61,4 +61,4 @@ function VentilationInfo() {
   );
 }
 
-export default VentilationInfo;
+export default CompanyInfo;
