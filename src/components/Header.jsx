@@ -61,6 +61,9 @@ function Header() {
               <Link to="/info/general">Общая информация</Link>
               <Link to="/info/reports">Регламентные мероприятия готовности МКД к отопительному периоду</Link>
               <Link to="/info/ventilation">Проверка вентиляции в МКД</Link>
+              <Link to="/info/mkd">Общие сведения по МКД</Link>
+              <Link to="/info/company">Отчетная деятельность компании</Link>
+              <Link to="/info/meetings">Общие собрания</Link>
             </div>
           </div>
           <button onClick={handleOpenLicense} className="license-button">Лицензия</button>
