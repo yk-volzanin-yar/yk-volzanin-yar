@@ -27,36 +27,45 @@ function MKDInfo() {
   return (
     <section className="info-page container">
       <h1 className="info-title">Общие сведения по МКД</h1>
+        <div className="info-links">
+          {fileMap.map(([title, fileName]) => {
+            if (!fileName) {
+              return (
+                <h3 style={{ color: '#2e2e2e'}} key={title}>{title}</h3>
+              );
+            }
 
-      <div className="info-links">
-        {fileMap.map(([title, fileName]) => (
-          fileName.endsWith('.txt') ? (
-            <div key={fileName}>
-              <h3 className="toggle-link" onClick={() => toggle(title, fileName)}>
-                {title} {open[title] ? '▲' : '▼'}
+            if (fileName.endsWith('.txt')) {
+              return (
+                <div key={fileName}>
+                  <h3 className="toggle-link" onClick={() => toggle(title, fileName)}>
+                    {title} {open[title] ? '▲' : '▼'}
+                  </h3>
+                  {open[title] && (
+                    <div
+                      className="toggle-content"
+                      dangerouslySetInnerHTML={{
+                        __html: marked.parse(texts[fileName] || ''),
+                      }}
+                    />
+                  )}
+                </div>
+              );
+            }
+
+            return (
+              <h3 key={fileName}>
+                <a
+                  href={`/mkd/${fileName}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {title}
+                </a>
               </h3>
-              {open[title] && (
-                <div
-                  className="toggle-content"
-                  dangerouslySetInnerHTML={{
-                    __html: marked.parse(texts[fileName] || ''),
-                  }}
-                />
-              )}
-            </div>
-          ) : (
-            <h3 key={fileName}>
-              <a
-                href={`/mkd/${fileName}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {title}
-              </a>
-            </h3>
-          )
-        ))}
-      </div>
+            );
+          })}
+        </div>
     </section>
   );
 }
