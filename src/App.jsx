@@ -10,7 +10,6 @@ import Info from './pages/Info.jsx';
 import General from './pages/info/General.jsx';
 import Reports from './pages/info/Reports.jsx';
 import Ventilation from './pages/info/Ventilation.jsx';
-import HeatingReadiness from './pages/info/HeatingReadiness.jsx';
 import Projects from './pages/Projects.jsx';
 import Vacancies from './pages/Vacancies.jsx';
 
@@ -29,7 +28,6 @@ function App() {
             <Route path="/info/general" element={<General />} />
             <Route path="/info/reports" element={<Reports />} />
             <Route path="/info/ventilation" element={<Ventilation />} />
-            <Route path="/info/heating-readiness" element={<HeatingReadiness />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/vacancies" element={<Vacancies />} />
           </Routes>

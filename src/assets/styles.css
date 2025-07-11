@@ -81,7 +81,7 @@ a:hover {
 
 .nav-wrapper {
   width: 100%;
-  padding: 20px;
+  padding-bottom: 20px;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(6px);
   display: flex;
@@ -97,7 +97,7 @@ a:hover {
 }
 
 .header-logo-img {
-  height: 50px;
+  height: 200px;
   width: auto;
 }
 
@@ -274,7 +274,7 @@ a:hover {
   position: relative;
   background-color: #fff;
   border-radius: 6px;
-  padding: 1rem 1.5rem 1rem 6.5rem;
+  padding: 1rem 1.5rem 1rem 11rem;
   margin-bottom: 1.4rem;
   font-size: 1.55em;
   font-weight: 700;
@@ -288,8 +288,8 @@ a:hover {
   top: 50%;
   left: 1rem;
   transform: translateY(-50%);
-  width: 3em;
-  height: 3em;
+  width: 6em;
+  height: 6em;
   background-image: url('/logo.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -618,8 +618,8 @@ a:hover {
   }
 
   .welcome-text {
-    font-size: 1em;
-    padding: 0.8rem 1rem 0.8rem 5rem;
+    font-size: 0.8em;
+    padding: 0.8rem 1rem 0.8rem 7rem;
     line-height: 1.4;
   }
 
@@ -630,6 +630,15 @@ a:hover {
   .site-header {
     background-position: center;
     min-height: 240px;
+  }
+
+  .header-logo-img {
+    height: 70px;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+    margin-right: 30vh;
   }
 
   .contacts-layout {
@@ -664,13 +673,18 @@ a:hover {
     min-height: 240px;
   }
 
+  .header-logo-img {
+    height: 70px;
+  }
+
   .logo {
     font-size: 1.3rem;
+    margin-right: 30vh;
   }
 
   .welcome-text {
-    font-size: 1em;
-    padding: 0.8rem 1rem 0.8rem 5rem;
+    font-size: 0.8em;
+    padding: 0.8rem 1rem 0.8rem 7rem;
     line-height: 1.4;
   }
 
