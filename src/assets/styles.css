@@ -39,26 +39,26 @@ main {
 h1 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
-  color: #0b4d91;
+  color: #0d66ba;
   margin-top: 0;
 }
 
 h2 {
   font-size: 1.6rem;
   margin-bottom: 0.8rem;
-  color: #0b4d91;
+  color: #0d66ba;
   margin-top: 0;
 }
 
 h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
-  color: #0b4d91;
+  color: #0d66ba;
   margin-top: 0;
 }
 
 a {
-  color: #0b4d91;
+  color: #0d66ba;
   text-decoration: none;
 }
 
@@ -149,7 +149,7 @@ a:hover {
   top: 100%;
   left: 0;
   background-color: white;
-  color: #0b4d91;
+  color: #0d66ba;
   padding: 12px;
   display: none;
   flex-direction: column;
@@ -161,7 +161,7 @@ a:hover {
 
 
 .dropdown-content a {
-  color: #0b4d91;
+  color: #0d66ba;
   padding: 6px 0;
 }
 
@@ -174,7 +174,7 @@ a:hover {
   top: 1rem;
   right: 1rem;
   background: rgba(255, 255, 255, 1);
-  border: 2px solid #0b4d91;
+  border: 2px solid #0d66ba;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -226,7 +226,7 @@ a:hover {
 .close-btn {
   margin-top: 12px;
   padding: 6px 16px;
-  background-color: #0b4d91;
+  background-color: #0d66ba;
   color: white;
   border: none;
   border-radius: 4px;
@@ -302,11 +302,12 @@ a:hover {
 
 .welcome-text p {
   margin: 0;
+  color: #0d66ba;
 }
 
 /* === Футер === */
 .footer {
-  background-color: #0b4d91;
+  background-color: #0d66ba;
   color: white;
   padding: 30px 20px;
   font-size: 1rem;
@@ -346,7 +347,7 @@ a:hover {
 
 .news-section h2 {
   margin-bottom: 20px;
-  color: #0b4d91;
+  color: #0d66ba;
   border-bottom: 2px solid #e5e5e5;
   padding-bottom: 8px;
   font-size: 2em;
@@ -399,7 +400,7 @@ a:hover {
 .load-more-btn {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #0b4d91;
+  background-color: #0d66ba;
   color: white;
   border: none;
   border-radius: 6px;
@@ -422,7 +423,7 @@ a:hover {
 
 .emergency-box {
   background-color: #ffffff;
-  border-left: 4px solid #0b4d91;
+  border-left: 4px solid #0d66ba;
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
@@ -431,7 +432,7 @@ a:hover {
 .emergency-box h3 {
   margin-top: 0;
   font-size: 1.1em;
-  color: #0b4d91;
+  color: #0d66ba;
 }
 
 .phone-number {
@@ -536,7 +537,7 @@ a:hover {
 
 .info-title {
   margin-bottom: 20px;
-  color: #0b4d91;
+  color: #0d66ba;
   border-bottom: 2px solid #e5e5e5;
   padding-bottom: 8px;
   font-size: 2.2rem;
@@ -556,7 +557,7 @@ a:hover {
 }
 
 .info-links a:hover {
-  color: #003d73;
+  color: #0d66ba;
 }
 
 .info-links {
@@ -602,7 +603,7 @@ a:hover {
 }
 
 .toggle-link:hover {
-  color: #003d73;
+  color: #0d66ba;
 }
 
 /* === Адаптивность === */
