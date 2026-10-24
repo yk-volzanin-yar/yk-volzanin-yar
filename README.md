@@ -1,129 +1,29 @@
-# 🌐 ООО "ВОЛЖАНИН" — Frontend проект
+# Сайт УК «Волжанин»
 
-**Сайт:** [ук-волжанин-яр.рф](https://ук-волжанин-яр.рф)
+Сайт управляющей организации ООО «ВОЛЖАНИН»: [ук-волжанин-яр.рф](https://ук-волжанин-яр.рф).
 
----
+Новости и разделы «Информации» редактируют в браузере через Pages CMS. Сайт
+публикуется сам через одну-три минуты после сохранения. Компьютер с программами
+для этого не нужен.
 
-## 🚀 Быстрый старт
+## Редактору
 
-### Разработка
+1. [Вход в админку](docs/guide/01-vhod.md)
+2. [Новости: добавить, исправить, удалить](docs/guide/02-novosti.md)
+3. [Разделы «Информации»](docs/guide/03-razdely.md)
+4. [Фото и документы](docs/guide/04-faily.md)
+5. [Проверить, что сайт обновился](docs/guide/05-publikaciya.md)
+6. [Если что-то пошло не так](docs/guide/06-problemy.md)
 
-1. Установите зависимости:
-   ```sh
-   npm install
-   ```
-2. Запустите проект в режиме разработки:
-   ```sh
-   npm run dev
-   ```
+## Администратору
 
----
+7. [Как устроен сайт](docs/admin/01-ustroistvo.md)
+8. [Формат файлов контента](docs/admin/02-format.md)
+9. [Публикация и проверка контента](docs/admin/03-publikaciya.md)
+10. [Pages CMS: настройка и редакторы](docs/admin/04-pages-cms.md)
+11. [Домен и HTTPS](docs/admin/05-domen.md)
+12. [Разработка](docs/admin/06-razrabotka.md)
+13. [Доступы и полезные ссылки](docs/admin/07-dostupy.md)
 
-### Деплой
-
-Сайт публикуется автоматически. Любое изменение в ветке `dev`, в том числе
-сделанное через веб-интерфейс GitHub, запускает workflow
-[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). Он собирает
-проект и выкладывает его на GitHub Pages. Через 1–3 минуты изменения появляются на сайте.
-
-- Ход сборки виден на вкладке **Actions** репозитория.
-- Перезапустить публикацию вручную: **Actions → Deploy → Run workflow**.
-- Если сборка упала, на сайте остаётся прошлая версия, а GitHub присылает
-  письмо автору изменения.
-
-Однократная настройка (делает владелец репозитория):
-**Settings → Pages → Build and deployment → Source: GitHub Actions**.
-Потом проверить, что в **Custom domain** остался `ук-волжанин-яр.рф`.
-
-Аварийный ручной деплой с компьютера (публикует в ветку `gh-pages`,
-работает, только если в Pages источником выбрана эта ветка):
-```sh
-npm run deploy
-```
-## Для красивого оформления текста в новостях или в общей информации можно попросить deepseek помочь отформатировать текст
-
-https://chat.deepseek.com/
-
-перед тем,как работать с текстом ему нужно обьяснить задачу
-Например:
-`Ты рабоатешь с текстовым форматом .md , .txt (или другие по аналогии). Тебе нужно отформатировать мой введенный текст так, чтобы было красиво.`
-
-Дальше вводишь свой текст и он тебе его форматирует под нужный формат
-
-результат можно посмотреть сразу в окне создания файла в github в разделе `предпросмотр`
-
-
-## Контент: новости и разделы «Информации»
-
-Контент хранится в файлах Markdown с YAML-заголовком. Их пишет Pages CMS,
-но можно править и руками на github.com.
-
-- `content/news/<дата>-<имя>.md` — новость. Поля: `title`, `date` (`2025-07-09`),
-  `images` (необязательно, список путей), дальше текст новости.
-- `content/info/<раздел>.md` — раздел «Информации». Поля: `title`, `slug`
-  (адрес `/info/<slug>`, латиница), `order` (место в меню), `items` — пункты:
-  - `article` — `title`, `body` (текст Markdown, раскрывается по клику);
-  - `document` — `title`, `file` (путь к PDF);
-  - `image` — `title`, `image` (путь к картинке);
-  - `heading` — `title` (подзаголовок без ссылки).
-- Новые загрузки — в `public/uploads/`. Старые файлы остаются по прежним
-  путям (`public/general/`, `public/news_images/`), чтобы не ломать ссылки.
-
-Новый раздел появляется в меню «Информация» сам, код менять не нужно.
-Пример раздела:
-
-```yaml
----
-title: Общие сведения по МКД
-slug: mkd
-order: 4
-items:
-  - type: document
-    title: Договор управления
-    file: /uploads/dogovor.pdf
----
-```
-
----
-## 🏷 Gitflow
-
-1. Главная ветка для разработки — `dev`
-2. Для новой задачи создаем отдельную ветку от `dev`:
-   ```
-   feature-{номер issue}-{краткое описание}
-   ```
-   Пример:  
-   `feature-1-сделать_каркас_приложения_на_реакт`
-3. После завершения задачи оформляем Pull Request в `dev`
-4. При необходимости релиза:
-    - Мержим `dev` в `main`
-    - Проставляем git-тег и оформляем Release
-
----
-
-## ✅ Передача прав другому владельцу
-
-- [Yandex Business — подтверждение организации и управление в Яндекс.Справочнике](https://yandex.ru/sprav/133467149255/p/edit/main)
-- [REG.RU — доступ к домену](https://www.reg.ru/user/account/#/card/108401733/nss/)
-- [Яндекс Вебмастер — управление сайтом в поиске Яндекса](https://webmaster.yandex.ru/site/http:%D1%83%D0%BA-%D0%B2%D0%BE%D0%BB%D0%B6%D0%B0%D0%BD%D0%B8%D0%BD-%D1%8F%D1%80.%D1%80%D1%84:80/settings/access/)
-
----
-
-## 📈 SEO
-
-- [Яндекс Вебмастер](https://webmaster.yandex.ru/site/http:%D1%83%D0%BA-%D0%B2%D0%BE%D0%BB%D0%B6%D0%B0%D0%BD%D0%B8%D0%BD-%D1%8F%D1%80.%D1%80%D1%84:80/settings/access/)
-- [Google Search Console](https://search.google.com/search-console?resource_id=sc-domain%3Axn-----7kchunjkubf5a1a3p.xn--p1ai)
-
----
-
-## 🛠 Инструменты
-
-- [DNS Checker](https://dnschecker.org/#A/xn-----7kchunjkubf5a1a3p.xn--p1ai)
-- [PageSpeed Insights (Mobile)](https://pagespeed.web.dev/analysis/https-xn-----7kchunjkubf5a1a3p-xn--p1ai/mr6gmhnrms?hl=ru&form_factor=mobile)
-
----
-
-## 🗺 Карты
-
-- [2GIS](https://2gis.ru/yaroslavl/geo/3941285329113096/39.949346%2C57.652384/tab/inside?m=39.949488%2C57.651631%2F17.59)
-- [Яндекс Карты](https://yandex.ru/maps/16/yaroslavl/house/prospekt_mashinostroiteley_7/Z0AYfwNoQUwPQFttfXp0c3hnZw==/?ll=39.951111%2C57.651526&z=17.01)
+Проектные документы: [спецификация](docs/design-specs/editor-content-management.md)
+и [план](docs/plans/editor-content-management.md).
