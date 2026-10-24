@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom';
 import '../assets/styles.css';
+import { loadSections } from '../content/loadSections.js';
+
+const sections = loadSections();
 
 function Info() {
   return (
     <section className="info-page">
       <h1 className="info-title">Раскрытие информации</h1>
       <div className="info-links">
-        <h3><Link to="/info/general">Общая информация</Link></h3>
-        <h3><Link to="/info/reports">Регламентные мероприятия готовности МКД к отопительному периоду</Link></h3>
-        <h3><Link to="/info/ventilation">Проверка вентиляции в МКД</Link></h3>
-        <h3><Link to="/info/mkd">Общие сведения по МКД</Link></h3>
-        <h3><Link to="/info/company">Отчетная деятельность компании</Link></h3>
-        <h3><Link to="/info/meetings">Общие собрания</Link></h3>
+        {sections.map((section) => (
+          <h3 key={section.slug}><Link to={`/info/${section.slug}`}>{section.title}</Link></h3>
+        ))}
       </div>
     </section>
   );

@@ -11,7 +11,6 @@
     "lint": "eslint yk-volzanin-react",
     "preview": "vite preview",
     "test": "vitest run",
-    "migrate-content": "node scripts/migrate-content.mjs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
