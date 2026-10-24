@@ -7,12 +7,7 @@ import Services from './pages/Services.jsx';
 import About from './pages/About.jsx';
 import Contacts from './pages/Contacts.jsx'
 import Info from './pages/Info.jsx';
-import General from './pages/info/General.jsx';
-import Reports from './pages/info/Reports.jsx';
-import Ventilation from './pages/info/Ventilation.jsx';
-import MKD from './pages/info/MKD.jsx';
-import Company from './pages/info/Company.jsx';
-import Meetings from './pages/info/Meetings.jsx';
+import Section from './pages/info/Section.jsx';
 import Projects from './pages/Projects.jsx';
 import Vacancies from './pages/Vacancies.jsx';
 
@@ -28,12 +23,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/info" element={<Info />} />
-            <Route path="/info/general" element={<General />} />
-            <Route path="/info/reports" element={<Reports />} />
-            <Route path="/info/ventilation" element={<Ventilation />} />
-            <Route path="/info/mkd" element={<MKD />} />
-            <Route path="/info/company" element={<Company />} />
-            <Route path="/info/meetings" element={<Meetings />} />
+            <Route path="/info/:slug" element={<Section />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/vacancies" element={<Vacancies />} />
           </Routes>
