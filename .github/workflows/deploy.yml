@@ -1,0 +1,56 @@
+# Сборка и публикация сайта на GitHub Pages.
+# Запускается при каждом пуше в dev (в том числе из веб-интерфейса GitHub)
+# и вручную кнопкой «Run workflow» на вкладке Actions.
+name: Deploy
+
+on:
+  push:
+    branches: [dev]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Два сохранения подряд не деплоятся параллельно: начатая публикация
+# доходит до конца, из ожидающих запускается только последняя.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # Ошибка в новости или разделе останавливает сборку: на сайте
+      # остаётся прошлая версия, ошибки видны на странице прогона.
+      - name: Проверка контента
+        run: npm run validate-content
+
+      - run: npm run build
+
+      # Сюда добавляется шаг сжатия картинок в dist/ (Item 3).
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

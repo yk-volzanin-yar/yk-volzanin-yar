@@ -1,101 +1,29 @@
-# 🌐 ООО "ВОЛЖАНИН" — Frontend проект
+# Сайт УК «Волжанин»
 
-**Сайт:** [ук-волжанин-яр.рф](https://ук-волжанин-яр.рф)
+Сайт управляющей организации ООО «ВОЛЖАНИН»: [ук-волжанин-яр.рф](https://ук-волжанин-яр.рф).
 
----
+Новости и разделы «Информации» редактируют в браузере через Pages CMS. Сайт
+публикуется сам через одну-три минуты после сохранения. Компьютер с программами
+для этого не нужен.
 
-## 🚀 Быстрый старт
+## Редактору
 
-### Разработка
+1. [Вход в админку](docs/guide/01-vhod.md)
+2. [Новости: добавить, исправить, удалить](docs/guide/02-novosti.md)
+3. [Разделы «Информации»](docs/guide/03-razdely.md)
+4. [Фото и документы](docs/guide/04-faily.md)
+5. [Проверить, что сайт обновился](docs/guide/05-publikaciya.md)
+6. [Если что-то пошло не так](docs/guide/06-problemy.md)
 
-1. Установите зависимости:
-   ```sh
-   `npm install`
-   ```
-2. Запустите проект в режиме разработки:
-   ```sh
-   npm run dev
-   ```
+## Администратору
 
----
+7. [Как устроен сайт](docs/admin/01-ustroistvo.md)
+8. [Формат файлов контента](docs/admin/02-format.md)
+9. [Публикация и проверка контента](docs/admin/03-publikaciya.md)
+10. [Pages CMS: настройка и редакторы](docs/admin/04-pages-cms.md)
+11. [Домен и HTTPS](docs/admin/05-domen.md)
+12. [Разработка](docs/admin/06-razrabotka.md)
+13. [Доступы и полезные ссылки](docs/admin/07-dostupy.md)
 
-### Деплой
-
-1. Установите пакет для деплоя (только один раз):
-   ```sh
-   npm install --save-dev gh-pages
-   ```
-2. Соберите проект и задеплойте:
-   ```sh
-   npm run deploy
-   ```
-
----
-
-## Добавление файлов для разделов «Информация»
-
-Все PDF, PNG или текстовые файлы, которые отображаются на сайте в подразделах «Информация», хранятся в папке **`/public`**:
-
-- `public/general` — **Общая информация**
-- `public/reports` — **Отчетность, регламентные мероприятия**
-- `public/ventilation` — **Проверка вентиляции в МКД**
-
-Чтобы добавить новый файл:
-
-1. Скопировать файл в нужную папку.  
-   Пример: `public/general/ordzhonikidze7.pdf`
-
-2. Открыть соответствующий файл **маппинга** в `src/maps/`.  
-   Например: `src/maps/generalMap.js`, `src/maps/reportsMap.js`, `src/maps/ventilationMap.js`
-
-3. Добавить новую строку в массив, например:  
-   ```js
-   export const fileMap = [
-     ["Заголовок, который видит пользователь", "имя_файла.pdf"],
-     ["г. Ярославль, ул. С. Орджоникидзе, д.7 ТСЖ 'Орджоникидзе 7' — договор эксплуатации", "ordzhonikidze7.pdf"],
-   ];
-
----
-
-## 🏷 Gitflow
-
-1. Главная ветка для разработки — `dev`
-2. Для новой задачи создаем отдельную ветку от `dev`:
-   ```
-   feature-{номер issue}-{краткое описание}
-   ```
-   Пример:  
-   `feature-1-сделать_каркас_приложения_на_реакт`
-3. После завершения задачи оформляем Pull Request в `dev`
-4. При необходимости релиза:
-    - Мержим `dev` в `main`
-    - Проставляем git-тег и оформляем Release
-
----
-
-## ✅ Передача прав другому владельцу
-
-- [Yandex Business — подтверждение организации и управление в Яндекс.Справочнике](https://yandex.ru/sprav/133467149255/p/edit/main)
-- [REG.RU — доступ к домену](https://www.reg.ru/user/account/#/card/108401733/nss/)
-- [Яндекс Вебмастер — управление сайтом в поиске Яндекса](https://webmaster.yandex.ru/site/http:%D1%83%D0%BA-%D0%B2%D0%BE%D0%BB%D0%B6%D0%B0%D0%BD%D0%B8%D0%BD-%D1%8F%D1%80.%D1%80%D1%84:80/settings/access/)
-
----
-
-## 📈 SEO
-
-- [Яндекс Вебмастер](https://webmaster.yandex.ru/site/http:%D1%83%D0%BA-%D0%B2%D0%BE%D0%BB%D0%B6%D0%B0%D0%BD%D0%B8%D0%BD-%D1%8F%D1%80.%D1%80%D1%84:80/settings/access/)
-- [Google Search Console](https://search.google.com/search-console?resource_id=sc-domain%3Axn-----7kchunjkubf5a1a3p.xn--p1ai)
-
----
-
-## 🛠 Инструменты
-
-- [DNS Checker](https://dnschecker.org/#A/xn-----7kchunjkubf5a1a3p.xn--p1ai)
-- [PageSpeed Insights (Mobile)](https://pagespeed.web.dev/analysis/https-xn-----7kchunjkubf5a1a3p-xn--p1ai/mr6gmhnrms?hl=ru&form_factor=mobile)
-
----
-
-## 🗺 Карты
-
-- [2GIS](https://2gis.ru/yaroslavl/geo/3941285329113096/39.949346%2C57.652384/tab/inside?m=39.949488%2C57.651631%2F17.59)
-- [Яндекс Карты](https://yandex.ru/maps/16/yaroslavl/house/prospekt_mashinostroiteley_7/Z0AYfwNoQUwPQFttfXp0c3hnZw==/?ll=39.951111%2C57.651526&z=17.01)
+Проектные документы: [спецификация](docs/design-specs/editor-content-management.md)
+и [план](docs/plans/editor-content-management.md).

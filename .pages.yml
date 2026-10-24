@@ -1,0 +1,156 @@
+# Конфигурация Pages CMS (https://app.pagescms.org) для сайта УК «Волжанин».
+# Пункт 10 плана docs/plans/editor-content-management.md.
+#
+# Редактор открывает репозиторий в Pages CMS на ветке dev. Каждое сохранение —
+# коммит в dev, после него workflow deploy.yml проверяет контент и публикует сайт.
+# Формат файлов описан в README («Контент: новости и разделы «Информации»»),
+# проверка — scripts/validate-content.mjs.
+
+media:
+  - name: files
+    label: Картинки и документы
+    input: public/uploads
+    output: /uploads
+    rename: safe
+    extensions: [jpg, jpeg, png, webp, pdf]
+  # Файлы, которые были на сайте до Pages CMS. На них ссылаются пункты
+  # раздела «Общая информация», поэтому пути менять нельзя. Удаление файла,
+  # который используется, остановит сборку (scripts/validate-content.mjs).
+  - name: archive
+    label: Старые файлы сайта
+    input: public/general
+    output: /general
+    rename: safe
+    extensions: [jpg, jpeg, png, webp, pdf]
+
+settings:
+  commit:
+    identity: user
+    templates:
+      create: "Добавлено: {path} ({userName})"
+      update: "Изменено: {path} ({userName})"
+      delete: "Удалено: {path} ({userName})"
+      rename: "Переименовано: {oldPath} → {newPath} ({userName})"
+
+content:
+  - name: news
+    label: Новости
+    type: collection
+    path: content/news
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{primary}.md"
+    operations:
+      rename: false
+    view:
+      primary: title
+      sort: date
+      order: desc
+    fields:
+      - name: title
+        label: Заголовок
+        type: string
+        required: true
+      - name: date
+        label: Дата
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: images
+        label: Фотографии (показываются под текстом)
+        type: image
+        options:
+          media: files
+          multiple:
+            max: 10
+      - name: body
+        label: Текст новости
+        type: rich-text
+        required: true
+        options:
+          format: markdown
+          media: files
+
+  - name: info
+    label: Разделы «Информации»
+    type: collection
+    path: content/info
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    operations:
+      rename: false
+    view:
+      primary: title
+      sort: order
+      order: asc
+    fields:
+      - name: title
+        label: Название раздела (так он называется в меню)
+        type: string
+        required: true
+      - name: slug
+        label: Адрес в ссылке (латиницей, например heating)
+        type: string
+        required: true
+        pattern:
+          regex: "^[a-z0-9-]+$"
+          message: Только маленькие латинские буквы, цифры и дефис
+      - name: order
+        label: Место в меню (1, 2, 3…)
+        type: number
+      - name: items
+        label: Пункты раздела
+        type: block
+        blockKey: type
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. {title}"
+        blocks:
+          - name: article
+            label: Статья (текст и картинки)
+            fields:
+              - name: title
+                label: Заголовок
+                type: string
+                required: true
+              - name: body
+                label: Текст
+                type: rich-text
+                options:
+                  format: markdown
+                  media: files
+          - name: document
+            label: Документ (PDF)
+            fields:
+              - name: title
+                label: Заголовок
+                type: string
+                required: true
+              - name: file
+                label: Файл
+                type: file
+                required: true
+                options:
+                  media: files
+                  extensions: [pdf]
+          - name: image
+            label: Картинка
+            fields:
+              - name: title
+                label: Заголовок
+                type: string
+                required: true
+              - name: image
+                label: Картинка
+                type: image
+                required: true
+                options:
+                  media: files
+          - name: heading
+            label: Подзаголовок (без файла)
+            fields:
+              - name: title
+                label: Текст подзаголовка
+                type: string
+                required: true
